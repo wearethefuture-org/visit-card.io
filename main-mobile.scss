@@ -1,0 +1,111 @@
+@media(max-width: 1300px){
+    body{
+        .banner{
+            img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .content{
+            .gallery{
+                grid-template-areas: 
+                                    "img-1 img-1 img-1 img-2"
+                                    "img-3 img-4 img-4 img-4"
+                                    "img-3 img-5 img-5 img-5"
+                                    "img-7 img-7 img-6 img-6";
+                
+            }
+        }
+        
+    }
+}
+@media(max-width: 1200px){
+    body{
+        .content{
+            .newsWrap{
+                flex-wrap: wrap !important;
+                .new{
+                    width: 48% !important;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
+                .new:nth-child(even){
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 750px){
+    body{
+        .banner{
+            .siteTitle{
+                h1{
+                    font-size: 4em;
+                }
+            }
+        }
+        .content{
+            .newsWrap{
+                .new{
+                    width: 100% !important;
+                    flex-direction: column;
+                }
+            }
+            .gallery{
+                grid-template-areas: 
+                                    "img-1 img-1 img-1 img-1" 
+                                    "img-2 img-2 img-2 img-2" 
+                                    "img-3 img-3 img-3 img-3" 
+                                    "img-4 img-4 img-4 img-4" 
+                                    "img-5 img-5 img-5 img-5" 
+                                    "img-6 img-6 img-6 img-6" 
+                                    "img-7 img-7 img-7 img-7";
+            }
+            .messageBlock{
+                .messageImages{
+                    width: 100% !important;
+                }
+            }
+            .ourTeam{
+                .nextMove, .prevMove{
+                    button{
+                        height: 60px;
+                        img{
+                            height: 100%;
+                        }
+                    }
+                }
+                .teamSlides{
+                    width: 100%;
+                    .slide{
+                        width: 320px !important;
+                        height: 450px !important;
+                        .face{
+                            width: 320px !important;
+                            height: 450px !important;
+                            img{
+                                width: 320px !important;
+                                height: auto;
+                            }
+                        }
+                        .face2{
+                            .information{
+                                width: 320px !important;
+                                padding: 20px;
+                            }
+                        }
+                    }
+                    .slide:hover{
+                        .face2{
+                            transform: translate(120px, -10px) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
