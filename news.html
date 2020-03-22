@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.min.css">
+    <link rel="stylesheet" href="main-mobile.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/6c931a9bea.js" crossorigin="anonymous"></script>
+    <button class="myHanburger myHamburgerLine" id="menuBtn" onclick="menuToggle()">
+        <span>Menu </span>
+    </button>
+    <button id="contectShow" onclick="contactToggle()"><i class="fas fa-comment-dots"></i></button>
+    <div id="contactWrap">
+        <form action="#" class="contactForm">
+            <h3>Contact us</h3>
+            <input type="text" placeholder="Name"/>
+            <input type="text" placeholder="Email"/>
+            <input type="text" placeholder="Phone"/>
+            <textarea name="message" id="" cols="1" rows="7"></textarea>
+            <input type="submit" class="myBtn" value="Send"/>
+        </form>
+    </div>
+    <header id="myHeader">
+        <section class="siteHeader">
+            <nav class="navMenu">
+                <ul>
+                    <li><a href="index.html" data-text="Home">Home</a></li>
+                    <li><a href="about.html" data-text="About">About</a></li>
+                    <!--<li><a href="gallery.html" data-text="Galery">Galery</a></li> -->
+                    <li><a href="news.html" data-text="News">News</a></li>
+                    <li><a href="contacts.html" data-text="Contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+
+
+    <section class="content">
+        <div class="container">
+            <div><h1>News</h1></div>
+
+            <section class="newsWrap">
+                <div class="new">
+                    <div class="imgBox">
+                        <img src="img/ofice1.jpg" alt="">
+                    </div>
+                    <div class="textBox">
+                        <h3 class="blockTitle">ArmyJS</h3>
+                        <p>Our company works in a different areas of the digital business. One of them is an own bootcamp for those who wants to learn new technologies, new approaches, strategies from the Development Perspective. Mode details you can find here (і додати лінку на сайт арміджс)</p>
+                    </div>
+                </div>
+                <div class="new">
+                    <div class="imgBox">
+                        <img src="img/ofice2.jpg" alt="">
+                    </div>
+                    <div class="textBox">
+                        <h3 class="blockTitle">WATF Shop</h3>
+                        <p>We are glad to present you first internal project of our bootcamp students. It is a small online shop which was developed using only modern technologies. All work was made in collaboration with mentors from our company. <a href="#">Follow us here</a></p>
+                    </div>
+                </div>
+                <div class="new">
+                    <div class="imgBox">
+                        <img src="img/ofice3.jpg" alt="">
+                    </div>
+                    <div class="textBox">
+                        <h3 class="blockTitle">UpWork as a new opportunity</h3>
+                        <p>Step forward in the openness of the company globally in the internet. <a href="#">Follow us here</a></p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </section>
+
+    <footer>
+        <footer>
+            <h2 class="blockTitle">Think, Move, Create with WATF </h2>
+            <div class="socialWrap">
+                <ul class="socialIcons">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <p>Copywriting &copy We are the Future February 2020</p>
+        </footer>
+    <script src="js/function.js"></script>
+</body>
+</html>
